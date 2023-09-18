@@ -43,7 +43,7 @@ namespace RayTube
         public WebView2 webView21 = new WebView2();
         private static int width = Screen.PrimaryScreen.Bounds.Width;
         private static int height = Screen.PrimaryScreen.Bounds.Height;
-        private static string type, windowtitle, base64image;
+        private static string windowtitle, base64image;
         private static IntPtr findwindow;
         private static bool closed = false;
         private static uint PW_CLIENTONLY = 0x1;
@@ -74,23 +74,68 @@ namespace RayTube
             using (System.IO.StreamReader file = new System.IO.StreamReader("params.txt"))
             {
                 file.ReadLine();
-                type = file.ReadLine();
-                file.ReadLine();
                 windowtitle = file.ReadLine();
             }
             jpegEncoder = ImageCodecInfo.GetImageDecoders().First(c => c.FormatID == ImageFormat.Jpeg.Guid);
             encoderParameters = new EncoderParameters(1);
             encoderParameters.Param[0] = new EncoderParameter(Encoder.Compression, 255);
-            /*findwindow = FindWindow(null, windowtitle);
+            findwindow = FindWindow(null, windowtitle);
             GetWindowRect(findwindow, out rc);
             bmp = new Bitmap(rc.Width, rc.Height, PixelFormat.Format32bppArgb);
-            gfxBmp = Graphics.FromImage(bmp);*/
+            gfxBmp = Graphics.FromImage(bmp);
         }
-        private void timer1_Tick(object sender, EventArgs e)
+        private async void timer1_Tick(object sender, EventArgs e)
         {
+            try
+            {
+                bitmap = PrintWindow(findwindow);
+                bitmap = new Bitmap(bitmap, new Size(bitmap.Width / 4, bitmap.Height / 4));
+                bitmap = ImageToGrayScale(bitmap);
+                byte[] imageArray = ImageToByteArray(bitmap);
+                base64image = Convert.ToBase64String(imageArray);
+                await execScriptHelper($"setBackground('{base64image.ToString()}');");
+            }
+            catch { }
+        }
+        public Bitmap PrintWindow(IntPtr hwnd)
+        {
+            hdcBitmap = gfxBmp.GetHdc();
+            PrintWindow(hwnd, hdcBitmap, PW_CLIENTONLY | PW_RENDERFULLCONTENT);
+            gfxBmp.ReleaseHdc(hdcBitmap);
+            return bmp;
+        }
+        public static Bitmap ImageToGrayScale(Bitmap Bmp)
+        {
+            int rgb;
+            Color c;
+            for (int y = 0; y < Bmp.Height; y++)
+            {
+                for (int x = 0; x < Bmp.Width; x++)
+                {
+                    c = Bmp.GetPixel(x, y);
+                    rgb = (int)Math.Round(.299 * c.R + .587 * c.G + .114 * c.B);
+                    Bmp.SetPixel(x, y, Color.FromArgb(rgb, rgb, rgb));
+                }
+            }
+            return Bmp;
+        }
+        public byte[] ImageToByteArray(Bitmap image)
+        {
+            using (MemoryStream ms = new MemoryStream())
+            {
+                image.Save(ms, jpegEncoder, encoderParameters);
+                return ms.ToArray();
+            }
+        }
+        private async Task<String> execScriptHelper(String script)
+        {
+            var x = await webView21.ExecuteScriptAsync(script).ConfigureAwait(false);
+            return x;
         }
         private void Form1_FormClosed(object sender, FormClosedEventArgs e)
         {
+            closed = true;
+            gfxBmp.Dispose();
         }
     }
 }

@@ -11,7 +11,7 @@
         }
 
         body {
-            background: url('https://appassets/raytube.png') no-repeat center center fixed;
+            background: url('https://appassets/raytube.gif') no-repeat center center fixed;
             background-size: 100vw 100vh;
         }
 
@@ -30,13 +30,13 @@
 </head>
 
 <body>
-    <img src='https://appassets/raytube.gif'/>
+    <img src=''/>
     <script>
 
-        /*function setBackground(base64image) {
-            var body = document.getElementsByTagName('body')[0];
-            body.style.backgroundImage = 'url("data:image/jpg;base64, ' + base64image + '")';
-        }*/
+        function setBackground(base64image) {
+            var img = document.getElementsByTagName('img')[0];
+            img.src = 'data:image/jpg;base64, ' + base64image;
+        }
     </script>
 
 </body>
