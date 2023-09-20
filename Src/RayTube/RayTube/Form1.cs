@@ -89,7 +89,7 @@ namespace RayTube
             try
             {
                 bitmap = PrintWindow(findwindow);
-                bitmap = new Bitmap(bitmap, new Size(bitmap.Width / 4, bitmap.Height / 4));
+                bitmap = new Bitmap(bitmap, new Size(bitmap.Width / 3, bitmap.Height / 3));
                 bitmap = ImageToGrayScale(bitmap);
                 byte[] imageArray = ImageToByteArray(bitmap);
                 base64image = Convert.ToBase64String(imageArray);

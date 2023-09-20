@@ -11,3 +11,16 @@ C:\Users\micha\Documents\tool\RayTube\RayTube\obj\Release\RayTube.csproj.CoreCom
 C:\Users\micha\Documents\tool\RayTube\RayTube\obj\Release\RayTube.csproj.CopyComplete
 C:\Users\micha\Documents\tool\RayTube\RayTube\obj\Release\RayTube.exe
 C:\Users\micha\Documents\tool\RayTube\RayTube\obj\Release\RayTube.pdb
+C:\Users\micha\Documents\github\RayTube\Src\RayTube\RayTube\bin\Release\RayTube.exe.config
+C:\Users\micha\Documents\github\RayTube\Src\RayTube\RayTube\bin\Release\RayTube.exe
+C:\Users\micha\Documents\github\RayTube\Src\RayTube\RayTube\bin\Release\RayTube.pdb
+C:\Users\micha\Documents\github\RayTube\Src\RayTube\RayTube\bin\Release\Newtonsoft.Json.xml
+C:\Users\micha\Documents\github\RayTube\Src\RayTube\RayTube\obj\Release\RayTube.csproj.AssemblyReference.cache
+C:\Users\micha\Documents\github\RayTube\Src\RayTube\RayTube\obj\Release\RayTube.csproj.SuggestedBindingRedirects.cache
+C:\Users\micha\Documents\github\RayTube\Src\RayTube\RayTube\obj\Release\RayTube.Form1.resources
+C:\Users\micha\Documents\github\RayTube\Src\RayTube\RayTube\obj\Release\RayTube.Properties.Resources.resources
+C:\Users\micha\Documents\github\RayTube\Src\RayTube\RayTube\obj\Release\RayTube.csproj.GenerateResource.cache
+C:\Users\micha\Documents\github\RayTube\Src\RayTube\RayTube\obj\Release\RayTube.csproj.CoreCompileInputs.cache
+C:\Users\micha\Documents\github\RayTube\Src\RayTube\RayTube\obj\Release\RayTube.csproj.CopyComplete
+C:\Users\micha\Documents\github\RayTube\Src\RayTube\RayTube\obj\Release\RayTube.exe
+C:\Users\micha\Documents\github\RayTube\Src\RayTube\RayTube\obj\Release\RayTube.pdb
