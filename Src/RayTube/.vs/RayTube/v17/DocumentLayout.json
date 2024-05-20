@@ -3,16 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\micha\\Documents\\github\\RayTube\\Src\\RayTube\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{473D1742-F104-4DFC-813D-2269968850D3}|RayTube\\RayTube.csproj|C:\\Users\\micha\\Documents\\github\\RayTube\\Src\\RayTube\\raytube\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{473D1742-F104-4DFC-813D-2269968850D3}|RayTube\\RayTube.csproj|solutionrelative:raytube\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{473D1742-F104-4DFC-813D-2269968850D3}|RayTube\\RayTube.csproj|c:\\users\\micha\\documents\\github\\raytube\\src\\raytube\\raytube\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{473D1742-F104-4DFC-813D-2269968850D3}|RayTube\\RayTube.csproj|solutionrelative:raytube\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{473D1742-F104-4DFC-813D-2269968850D3}|RayTube\\RayTube.csproj|C:\\Users\\micha\\Documents\\github\\RayTube\\Src\\RayTube\\raytube\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{473D1742-F104-4DFC-813D-2269968850D3}|RayTube\\RayTube.csproj|solutionrelative:raytube\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{473D1742-F104-4DFC-813D-2269968850D3}|RayTube\\RayTube.csproj|C:\\Users\\micha\\Documents\\github\\RayTube\\Src\\RayTube\\raytube\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{473D1742-F104-4DFC-813D-2269968850D3}|RayTube\\RayTube.csproj|solutionrelative:raytube\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{473D1742-F104-4DFC-813D-2269968850D3}|RayTube\\RayTube.csproj|C:\\Users\\micha\\Documents\\github\\RayTube\\Src\\RayTube\\raytube\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
@@ -26,24 +26,24 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Form2.cs",
               "DocumentMoniker": "C:\\Users\\micha\\Documents\\github\\RayTube\\Src\\RayTube\\RayTube\\Form2.cs",
               "RelativeDocumentMoniker": "RayTube\\Form2.cs",
               "ToolTip": "C:\\Users\\micha\\Documents\\github\\RayTube\\Src\\RayTube\\RayTube\\Form2.cs",
               "RelativeToolTip": "RayTube\\Form2.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAEoAAAABAAAA",
+              "ViewState": "AQIAAA0AAAAAAAAAAAAQwEoAAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-13T19:11:20.861Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "Form2.cs [Design]",
               "DocumentMoniker": "C:\\Users\\micha\\Documents\\github\\RayTube\\Src\\RayTube\\RayTube\\Form2.cs",
               "RelativeDocumentMoniker": "RayTube\\Form2.cs",
@@ -54,15 +54,16 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "Form1.cs",
               "DocumentMoniker": "C:\\Users\\micha\\Documents\\github\\RayTube\\Src\\RayTube\\RayTube\\Form1.cs",
               "RelativeDocumentMoniker": "RayTube\\Form1.cs",
               "ToolTip": "C:\\Users\\micha\\Documents\\github\\RayTube\\Src\\RayTube\\RayTube\\Form1.cs",
               "RelativeToolTip": "RayTube\\Form1.cs",
-              "ViewState": "AQIAAKUAAAAAAAAAAAAswLwAAAABAAAA",
+              "ViewState": "AQIAAEkAAAAAAAAAAAAYwE4AAAArAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2023-12-22T18:37:18.881Z"
+              "WhenOpened": "2023-12-22T18:37:18.881Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -73,7 +74,8 @@
               "ToolTip": "C:\\Users\\micha\\Documents\\github\\RayTube\\Src\\RayTube\\RayTube\\Form1.cs [Design]",
               "RelativeToolTip": "RayTube\\Form1.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2023-12-22T18:37:15.374Z"
+              "WhenOpened": "2023-12-22T18:37:15.374Z",
+              "EditorCaption": " [Design]"
             }
           ]
         }
